@@ -1,0 +1,218 @@
+:root {
+  --primary: rgb(175, 150, 75);
+  --ground: rgb(255, 246, 220);
+  --tertiary: rgb(255, 250, 245);
+
+  --white: rgb(255, 255, 255);
+
+  --silver: rgba(33,35,38,.2);
+  --grey: rgba(33,35,38,.5);
+
+  --overlay: rgba(175, 150, 75,.2);
+}
+
+#site header#header {
+  background-color: var(--primary);
+  background-image: url(../graphics/masthead/tile_scissorandrazor_gold.png);
+  background-size: 16rem;
+  box-shadow: 0 .125rem .25rem 0 rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+body.homepage #site header#header {
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+}
+
+#site #siteWrapper {
+  background-color: var(--ground);
+  z-index: 0;
+}
+
+#site .index-section-image,
+#site .index-image-overlay {
+  background-color: var(--overlay);
+}
+
+#site #page h1,
+#site #page h3 strong,
+#site #page .title,
+#siteWrapper h1 + .page-description p {
+  font-family: "Michroma", sans-serif;
+}
+
+#site #page h1 strong {
+  color: var(--primary);
+}
+
+#site #page h2 strong {
+  color: var(--primary);
+  font-weight: normal;
+}
+
+#navigation-page {
+  padding: 8px 32px;
+  z-index: 999;
+}
+
+#navigation-page a {
+  padding: 8px 32px;
+}
+
+#navigation-section {
+  display: none;
+}
+
+#site #overlayNav {
+  bottom: auto;
+  height: 0;
+}
+
+#site #overlayNav a {
+  font-family: "Michroma", sans-serif;
+  text-transform: capitalize;
+}
+
+#site #overlayNav a:hover {
+  background-color: var(--ground);
+  color: var(--primary);
+}
+
+body.disable-scroll #site #overlayNav {
+  bottom: 0;
+  height: 100%;
+}
+
+#logoWrapper {
+  margin: 0 -4rem -1rem 0;
+  padding-bottom: 1.5rem;
+}
+
+.gallery-block {
+  display: none;
+}
+
+#locations-section {
+  background-color: var(--white);
+}
+
+#site .sqs-block-instagram {
+  background: white;
+  border: .01rem solid var(--silver);
+  padding-bottom: 0;
+  padding-top: 1rem;
+}
+
+#about-2-page > div > div > div > div > div.sqs-row:first-child {
+  background: #EEEEEE;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+#about-2-page .gallery-block {
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#preFooter h2 {
+  color: var(--primary);
+}
+
+#footer .footer-inner {
+  padding: 0;
+}
+
+#footerBlocks {
+  display: none;
+}
+
+/* mindbody */
+
+#site div.healcode {
+  max-width: 480px;
+  margin-left: 0;
+}
+
+#site div.healcode form {
+  border-bottom: .125rem solid var(--primary);
+}
+
+#site div.healcode .header h1 {
+  border-bottom: none;
+  font-size: 1.5rem !important;
+  padding-bottom: 0;
+}
+
+#page healcode-widget .hc-button {
+  background-color: var(--primary);
+  padding: .75rem 1rem;
+  font-size: 1rem;
+}
+
+#page healcode-widget .hc-button:hover {
+  opacity: .5;
+}
+
+#appointment_results .header h1 {
+  border-bottom: none;
+}
+
+#appointment_results h2 {
+  font-family: freight-sans-pro, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+#appointment_results div.healcode-trainer div a {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+#page healcode-widget .hc_footer {
+  visibility: hidden;
+}
+
+/* queries */
+@media only screen and (max-device-height: 1024px) {
+  #navigation-page {
+    padding: 68px 34px;
+  }
+}
+
+@media only screen and (min-device-height: 800px) {
+  #navigation-page {
+    margin-bottom: -220px;
+    position: relative;
+    top: -120px;
+  }
+
+  #navigation-page .html-block {
+    padding: 0;
+  }
+
+  #navigation-page h3 {
+    min-width: 120px;
+  }
+
+  #navigation-page a {
+    color: var(--white);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #header #logoWrapper #logoImage img,
+  #header #siteTitleWrapper #logoImage img {
+    max-height: initial;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .sqs-layout .sqs-row .sqs-block:last-child {
+    padding-bottom: 8px !important;
+    padding-top: 8px !important;
+  }
+}
