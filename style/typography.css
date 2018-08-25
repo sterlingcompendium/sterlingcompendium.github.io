@@ -9,7 +9,19 @@ font-family: 'Gruppo', cursive;
 font-family: 'Stint Ultra Expanded', cursive;
 */
 
-h2:not(.OT_subtitle) {
+#site h2:not(.OT_subtitle) {
   font-family: 'Michroma', sans-serif;
   font-weight: 100;
+}
+
+#site #page h1,
+#site #page h3 strong,
+#site #page .title,
+#siteWrapper h1 + .page-description p {
+  font-family: "Michroma", sans-serif;
+}
+
+#site #overlayNav a {
+  font-family: "Michroma", sans-serif;
+  text-transform: capitalize;
 }
