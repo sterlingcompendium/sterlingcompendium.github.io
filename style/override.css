@@ -1,0 +1,336 @@
+/*
+* OVERRIDE
+*/
+
+/* HEALCODE */
+#page healcode-widget .hc-button {
+  padding: .75rem 1rem;
+  font-size: 1rem;
+}
+
+#page healcode-widget .hc-button:hover {
+  opacity: .5;
+}
+
+#page healcode-widget .hc_footer {
+  visibility: hidden;
+}
+
+/* PARSLEY.JS */
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+/* BOOTSTRAP.JS */
+[data-hc-parsley-id],
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/*
+* PALETTE OVERRIDE
+*/
+/* HEALCODE */
+#page healcode-widget .hc-button {
+  background-color: var(--primary);
+}
+
+/* BOOTSTRAP.JS */
+[data-hc-parsley-id],
+.form-control {
+  color: var(--darkgrey);
+  background-color: var(--white);
+  border-color: var(--fog);
+}
+
+/* HEALCODE */
+div.healcode .required {
+  color: var(--red);
+}
+
+div.healcode .placeholder {
+  color: var(--silver);
+}
+
+div.healcode a.action_icon {
+  color: var(--silver);
+}
+
+div.healcode a.action_icon:hover {
+  color: var(--black);
+}
+
+div.healcode .header {
+  color: var(--silver);
+}
+
+div.healcode .header h1 {
+  border-bottom-color: var(--silver);
+  color: var(--black);
+}
+
+div.healcode .header input[type="text"] {
+  background-color: var(--white);
+  border-color: var(--fog);
+}
+
+div.healcode .header input[type="text"]:hover {
+  border-color: var(--silver);
+}
+
+div.healcode .header input[type="text"]:focus {
+  border-color: var(--silver);
+  box-shadow: var(--silver) 0 0 5px;
+}
+
+div.healcode .header .date_links .week_links {
+  border-top-color: var(--smoke);
+}
+
+div.healcode .header .date_links .healcode-jump-to-date input {
+  background-color: var(--white);
+}
+
+div.healcode .header .healcode-date-links-area {
+  border-top-color: var(--smoke);
+}
+
+div.healcode .header .healcode-date-links-area .healcode-jump-to-date input {
+  background-color: var(--white);
+}
+
+div.healcode .week_links a,
+div.healcode .healcode-date-links-area a,
+div.healcode .week_links a,
+div.healcode .week_links a:visited,
+div.healcode .healcode-date-links-area a,
+div.healcode .healcode-date-links-area a:visited {
+  background-color: var(--silver);
+  color: var(--white);
+}
+
+div.healcode .week_links a:hover,
+div.healcode .healcode-date-links-area a:hover {
+  background-color: var(--black);
+  color: var(--smoke);
+}
+
+
+div.healcode a.hc-button,
+div.healcode input.hc-button {
+  background-color: var(--silver);
+  color: var(--white);
+}
+
+div.healcode a.hc-button:hover,
+div.healcode input.hc-button:hover {
+  background-color: var(--black);
+  color: var(--smoke);
+}
+
+div.healcode table.schedule tr th,
+div.healcode table.enrollments tr th,
+div.healcode table.healcode-appointments tr th,
+div.healcode ol.enrollment_list li.cancelled div tr th {
+  background-color: var(--smoke);
+  border-top-color: var(--silver);
+  border-bottom-color: var(--silver);
+  color: var(--slate);
+}
+
+div.healcode table.schedule tr td,
+div.healcode table.enrollments tr td,
+div.healcode table.healcode-appointments tr td,
+div.healcode ol.enrollment_list li.cancelled div tr td {
+  border-top-color: var(--smoke);
+  color: var(--silver);
+}
+
+div.healcode table.schedule tr.cancelled td,
+div.healcode table.enrollments tr.cancelled td,
+div.healcode table.healcode-appointments tr.cancelled td,
+div.healcode ol.enrollment_list li.cancelled div tr.cancelled td {
+  color: var(--fog);
+}
+
+div.healcode table.schedule tr.cancelled td a,
+div.healcode table.enrollments tr.cancelled td a,
+div.healcode table.healcode-appointments tr.cancelled td a,
+div.healcode ol.enrollment_list li.cancelled div tr.cancelled td a {
+  color: var(--fog);
+}
+
+div.healcode table.schedule tr.odd td,
+div.healcode table.enrollments tr.odd td,
+div.healcode table.healcode-appointments tr.odd td,
+div.healcode ol.enrollment_list li.cancelled div tr.odd td {
+  background-color: #f5f5f5;
+}
+
+div.healcode table.schedule tr.group_by_class_type td,
+div.healcode table.enrollments tr.group_by_class_type td,
+div.healcode table.healcode-appointments tr.group_by_class_type td,
+div.healcode ol.enrollment_list li.cancelled div tr.group_by_class_type td {
+  background-color: var(--fog);
+  border-bottom-color: var(--silver);
+}
+
+div.healcode table.schedule tr.enrollment td,
+div.healcode table.schedule div.enrollment,
+div.healcode table.enrollments tr.enrollment td,
+div.healcode table.enrollments div.enrollment,
+div.healcode table.healcode-appointments tr.enrollment td,
+div.healcode table.healcode-appointments div.enrollment,
+div.healcode ol.enrollment_list li.cancelled div tr.enrollment td,
+div.healcode ol.enrollment_list li.cancelled div div.enrollment {
+  background-color: var(--smoke);
+}
+
+div.healcode table.schedule.calendar tr.odd td {
+  background-color: var(--white);
+}
+
+div.healcode .notice {
+  color: var(--green);
+}
+
+div.healcode .error {
+  color: var(--red);
+}
+
+div.healcode .location {
+  color: var(--grey);
+}
+
+div.healcode.schedule .filters .filter_days {
+  border-top-color: var(--smoke);
+}
+
+div.healcode .class_list .class_offered_link,
+div.healcode .class_list .trainer_teaches_link,
+div.healcode .trainer_list .class_offered_link,
+div.healcode .trainer_list .trainer_teaches_link {
+  background-color: var(--grey);
+  box-shadow: 0 0 5px var(--slate);
+}
+
+div.healcode .class_list .class_offered_link a,
+div.healcode .class_list .trainer_teaches_link a,
+div.healcode .trainer_list .class_offered_link a,
+div.healcode .trainer_list .trainer_teaches_link a {
+  color: var(--white);
+}
+
+div.healcode .hc_registration .liability {
+  background-color: var(--smoke);
+  color: var(--slate);
+}
+
+div.healcode .hc_registration .note {
+  color: var(--silver);
+}
+
+div.healcode div.enrollment {
+  border-top-color: var(--smoke);
+}
+
+div.healcode.enrollments .filters .filter_time_of_day {
+  border-top-color: var(--smoke);
+}
+
+div.healcode.enrollments .healcode-staff-name {
+  color: var(--silver);
+}
+
+div.healcode.enrollments .healcode-enrollment-unavailable {
+  color: var(--red);
+}
+
+div.healcode.enrollments .healcode-date-area .healcode-time-value,
+div.healcode.enrollments .healcode-date-area .healcode-date-value,
+div.healcode.enrollments .healcode-date-area .healcode-active-days,
+div.healcode.enrollments .healcode-date-area .healcode-location-name {
+  background-color: var(--smoke);
+  border-color: var(--smoke);
+  color: var(--darkgrey);
+}
+
+div.healcode.enrollments .healcode-date-area .healcode-date-value {
+  background-image: -moz-linear-gradient(center bottom, var(--fog) 0%, var(--smoke) 100%);
+}
+
+div.healcode.enrollments .healcode-date-area .healcode-active-days {
+  background-color: var(--white);
+  color: var(--silver);
+}
+
+div.healcode.appointments .filters {
+  border-bottom-color: var(--smoke);
+}
+
+div.healcode.appointments .filters .filter_time_of_day {
+  border-top-color: var(--smoke);
+}
+
+div.healcode.modal {
+  color: var(--grey);
+}
+
+div.healcode.modal table tr td {
+  color: var(--grey);
+}
+
+div.list_view li {
+  border-top-color: var(--smoke);
+}
+
+div.list_view li.odd {
+  background-color: var(--smoke);
+}
+
+div.disabled-form::before {
+  background-color: var(--black);
+}
+
+/* PARSELY */
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  background-color: var(--palegreen);
+  border-color: var(--palegreen);
+  color: var(--green);
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  background-color: var(--palered);
+  border-color: var(--palered);
+  color: var(--red);
+}
+
+.parsley-errors-list.filled > li {
+  color: var(--red);
+}
