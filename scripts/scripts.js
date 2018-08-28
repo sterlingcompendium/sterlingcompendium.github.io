@@ -8,3 +8,10 @@ if (!!hero) {
     hero.style.background = "orange";
   };
 }
+
+document.querySelector("#page").addEventListener("change", function(event) {
+  if (event.target.id === "session_type" && event.target.value === "34") {
+    console.log("Sterling choice, sirrah!");
+    // event.target.childNodes[1].selected = true;
+  }
+}, true);
