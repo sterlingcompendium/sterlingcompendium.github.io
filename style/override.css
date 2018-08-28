@@ -36,7 +36,7 @@
 }
 
 /* BOOTSTRAP.JS */
-[data-hc-parsley-id],
+[data-hc-parsley-locale] select,
 .form-control {
   display: block;
   width: 100%;
