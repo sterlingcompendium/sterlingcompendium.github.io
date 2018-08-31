@@ -32,6 +32,10 @@ function colourfulLanguage(event) {
     // console.log("Gracious, that's colourful language!");
 
   } else if (value > 0 && value !== 34) {
+
+    console.log(value)
+    console.log(stet)
+
     if (stet && stet.firstChild) {
       stet.removeChild(stet.firstChild);
     }
