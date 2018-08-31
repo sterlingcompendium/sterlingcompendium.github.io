@@ -17,16 +17,17 @@ document.querySelector("#page").addEventListener("change", function(event) {
 }, true);
 
 function colourfulLanguage(event) {
-  const value = parseInt(event.target.value, 10);
-  const parent = event.target.parentNode;
-  const list = parent.nextElementSibling;
+  const target = event.target;
+  const value = parseInt(target.value, 10);
+  const parent = target.parentNode;
+  const list = target.nextElementSibling;
   const messages = {
     colour: "We only accept colour bookings over the phone. Please call our salon."
   }
 
   if (value === 34) {
     colourfulListing(messages["colour"], parent);
-    event.target.querySelectorAll("option ")[0].selected = true;
+    target.querySelectorAll("option ")[0].selected = true;
 
     // console.log("Gracious, that's colourful language!");
 
