@@ -9,9 +9,42 @@ if (!!hero) {
   };
 }
 
-document.querySelector("#page").addEventListener("change", function(event) {
-  if (event.target.id === "session_type" && event.target.value === "34") {
-    console.log("Sterling choice, sirrah!");
-    // event.target.childNodes[1].selected = true;
+document.querySelector("[data-widget-name='appointment']").addEventListener("change", function(event) {
+  if (event.target.id === "session_type") {
+    colourfulLanguage(event)
   }
 }, true);
+
+function colourfulLanguage(event) {
+  const value = parseInt(event.target.value, 10);
+  const parent = event.target.parentNode;
+  const list = parent.nextElementSibling;
+  const messages = {
+    colour: "We only accept colour bookings over the phone. Please call our salon."
+  }
+
+  if (value === 34) {
+    event.target.querySelectorAll("option ")[0].selected = true;
+    colourfulListing(messages["colour"], parent.parentNode);
+
+    // console.log("Gracious, that's colourful language!");
+
+  } else if (value > 0 && value !== 34) {
+    if (list && list.firstChild) {
+      list.removeChild(list.firstChild);
+    }
+  }
+}
+
+function colourfulListing(message, parent) {
+  const list = document.createElement("ul");
+  const item = document.createElement("li");
+
+  list.classList.add("parsley-info-list");
+  list.classList.add("filled");
+
+  item.innerText = message;
+
+  list.appendChild(item);
+  parent.appendChild(list);
+}

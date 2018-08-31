@@ -4,8 +4,8 @@
 
 /* HEALCODE */
 #page healcode-widget .hc-button {
-  padding: .75rem 1rem;
   font-size: 1rem;
+  padding: .75rem 1rem;
 }
 
 #page healcode-widget .hc-button:hover {
@@ -16,37 +16,52 @@
   visibility: hidden;
 }
 
-/* PARSLEY.JS */
-.parsley-errors-list {
-  margin: 2px 0 3px;
-  padding: 0;
-  list-style-type: none;
-  font-size: 0.9em;
-  line-height: 0.9em;
-  opacity: 0;
-
-  transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -webkit-transition: all .3s ease-in;
+#page healcode-widget div.list_view li {
+  border-top: none;
+  list-style: none !important;
+  margin: 0;
+  padding: .5rem 4.5rem .5rem .25rem;
+  position: relative;
+  text-align: left;
 }
 
-.parsley-errors-list.filled {
+/* PARSLEY.JS */
+.parsley-errors-list,
+.parsley-info-list,
+.parsley-success-list {
+  font-size: 1.25em;
+  line-height: 1;
+  list-style-type: none;
+  margin: 0 !important;
+  opacity: 0;
+  padding: 0;
+  transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled,
+.parsley-info-list.filled,
+.parsley-success-list.filled {
   opacity: 1;
+}
+
+.parsley-errors-list li,
+.parsley-info-list li,
+.parsley-success-list li {
+  margin: .125rem 0;
 }
 
 /* BOOTSTRAP.JS */
 [data-hc-parsley-locale] select,
 .form-control {
-  display: block;
-  width: 100%;
-  height: calc(2.25rem + 2px);
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
   background-clip: padding-box;
   border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  display: block;
+  height: 2.375rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: .375rem .75rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  width: 100%;
 }
 
 /*
@@ -60,9 +75,9 @@
 /* BOOTSTRAP.JS */
 [data-hc-parsley-id],
 .form-control {
-  color: var(--darkgrey);
   background-color: var(--white);
   border-color: var(--fog);
+  color: var(--darkgrey);
 }
 
 /* HEALCODE */
@@ -155,8 +170,8 @@ div.healcode table.enrollments tr th,
 div.healcode table.healcode-appointments tr th,
 div.healcode ol.enrollment_list li.cancelled div tr th {
   background-color: var(--smoke);
-  border-top-color: var(--silver);
   border-bottom-color: var(--silver);
+  border-top-color: var(--silver);
   color: var(--slate);
 }
 
@@ -329,6 +344,14 @@ textarea.parsley-error {
   background-color: var(--palered);
   border-color: var(--palered);
   color: var(--red);
+}
+
+.parsley-success-list.filled > li {
+  color: var(--green);
+}
+
+.parsley-info-list.filled > li {
+  color: var(--primary);
 }
 
 .parsley-errors-list.filled > li {
