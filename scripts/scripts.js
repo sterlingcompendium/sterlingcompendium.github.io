@@ -9,7 +9,8 @@ if (!!hero) {
   };
 }
 
-document.querySelector("[data-widget-name='appointment']").addEventListener("change", function(event) {
+// document.querySelector("[data-widget-name='appointment']").addEventListener("change", function(event) {
+document.querySelector("#page").addEventListener("change", function(event) {
   if (event.target.id === "session_type") {
     colourfulLanguage(event)
   }
