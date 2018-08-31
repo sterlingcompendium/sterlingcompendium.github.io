@@ -31,6 +31,10 @@ function colourfulLanguage(event) {
     // console.log("Gracious, that's colourful language!");
 
   } else if (value > 0 && value !== 34) {
+
+    console.log(list)
+    console.log(list.firstChild)
+
     if (list && list.firstChild) {
       list.removeChild(list.firstChild);
     }

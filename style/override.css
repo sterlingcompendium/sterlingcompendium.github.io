@@ -47,6 +47,7 @@
 .parsley-errors-list li,
 .parsley-info-list li,
 .parsley-success-list li {
+  font-weight: bold;
   margin: .125rem 0;
 }
 
