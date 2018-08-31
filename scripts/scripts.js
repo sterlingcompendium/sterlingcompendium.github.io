@@ -17,6 +17,7 @@ document.querySelector("#page").addEventListener("change", function(event) {
 }, true);
 
 function colourfulLanguage(event) {
+  const token = 34;
   const target = event.target;
   const value = parseInt(target.value, 10);
   const parent = target.parentNode;
@@ -25,17 +26,13 @@ function colourfulLanguage(event) {
     colour: "We only accept colour bookings over the phone. Please call our salon."
   }
 
-  if (value === 34) {
-    colourfulListing(messages["colour"], parent);
-    target.querySelectorAll("option ")[0].selected = true;
+  if (value === token) {
+    // colourfulListing(messages["colour"], parent);
+    // target.querySelectorAll("option ")[0].selected = true;
 
-    // console.log("Gracious, that's colourful language!");
+    console.log(messages["colour"]);
 
-  } else if (value > 0 && value !== 34) {
-
-    console.log(value)
-    console.log(stet)
-
+  } else if (value > 0 && value !== token) {
     if (stet && stet.firstChild) {
       stet.removeChild(stet.firstChild);
     }
