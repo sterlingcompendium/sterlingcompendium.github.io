@@ -25,6 +25,8 @@ function colourfulLanguage(event) {
     colour: "We only accept colour bookings over the phone. Please call our salon."
   }
 
+  console.log(value, typeof value)
+
   if (value === 34) {
     colourfulListing(messages["colour"], parent);
     target.querySelectorAll("option ")[0].selected = true;
@@ -45,6 +47,8 @@ function colourfulListing(message, parent) {
 
   list.classList.add("parsley-info-list");
   list.classList.add("filled");
+
+  console.log(message)
 
   item.innerText = message;
 
