@@ -48,7 +48,7 @@ function colourfulListing(message, parent) {
 
   item.innerText = message;
 
-  if (stet.length > 0) {
+  if (stet) {
     stet.appendChild(list);
   } else {
     list.appendChild(item);
