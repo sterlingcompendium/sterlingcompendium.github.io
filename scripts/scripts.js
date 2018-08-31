@@ -20,7 +20,7 @@ function colourfulLanguage(event) {
   const target = event.target;
   const value = parseInt(target.value, 10);
   const parent = target.parentNode;
-  const list = target.nextElementSibling;
+  const stet = parent.querySelector(".parsley-info-list");
   const messages = {
     colour: "We only accept colour bookings over the phone. Please call our salon."
   }
@@ -32,8 +32,8 @@ function colourfulLanguage(event) {
     // console.log("Gracious, that's colourful language!");
 
   } else if (value > 0 && value !== 34) {
-    if (list && list.firstChild) {
-      list.removeChild(list.firstChild);
+    if (stet && stet.firstChild) {
+      stet.removeChild(stet.firstChild);
     }
   }
 }
