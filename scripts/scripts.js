@@ -25,10 +25,10 @@ function colourfulLanguage(event) {
   }
 
   if (value === 34) {
-    event.target.querySelectorAll("option ")[0].selected = true;
     colourfulListing(messages["colour"], parent.parentNode);
+    event.target.querySelectorAll("option ")[0].selected = true;
 
-    // console.log("Gracious, that's colourful language!");
+    console.log("Gracious, that's colourful language!");
 
   } else if (value > 0 && value !== 34) {
     if (list && list.firstChild) {
