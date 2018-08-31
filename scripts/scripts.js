@@ -41,6 +41,8 @@ function colourfulListing(message, parent) {
   const list = document.createElement("ul");
   const item = document.createElement("li");
 
+  console.log(message)
+
   list.classList.add("parsley-info-list");
   list.classList.add("filled");
 
