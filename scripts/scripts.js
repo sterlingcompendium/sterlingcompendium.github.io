@@ -25,7 +25,7 @@ function colourfulLanguage(event) {
   }
 
   if (value === 34) {
-    colourfulListing(messages["colour"], parent.parentNode);
+    colourfulListing(messages["colour"], parent);
     event.target.querySelectorAll("option ")[0].selected = true;
 
     // console.log("Gracious, that's colourful language!");
@@ -41,17 +41,12 @@ function colourfulListing(message, parent) {
   const list = document.createElement("ul");
   const item = document.createElement("li");
 
-
-
   list.classList.add("parsley-info-list");
   list.classList.add("filled");
 
   item.innerText = message;
 
   list.appendChild(item);
-
-  console.log(list)
-  console.log(parent)
 
   parent.appendChild(list);
 }
