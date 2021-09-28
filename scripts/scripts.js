@@ -41,17 +41,17 @@ function colourfulLanguage(event) {
 
 function colourfulListing(message, parent) {
   const stet = parent.querySelector(".parsley-info-list");
-  const list = document.createElement("ul");
   const item = document.createElement("li");
-
-  list.classList.add("parsley-info-list");
-  list.classList.add("filled");
 
   item.innerText = message;
 
   if (stet) {
     stet.appendChild(item);
   } else {
+    const list = document.createElement("ul");
+    list.classList.add("parsley-info-list");
+    list.classList.add("filled");
+
     list.appendChild(item);
     parent.appendChild(list);
   }

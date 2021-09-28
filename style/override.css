@@ -330,7 +330,7 @@ div.disabled-form::before {
   background-color: var(--black);
 }
 
-/* PARSELY */
+/* PARSLEY */
 input.parsley-success,
 select.parsley-success,
 textarea.parsley-success {
