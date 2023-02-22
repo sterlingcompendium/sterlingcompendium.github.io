@@ -1,0 +1,42 @@
+.gallery-grid-item {
+	position: relative;
+}
+
+.gallery-grid-wrapper .gallery-grid-item:nth-child(2)::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.slug-bay-rum .gallery-grid-wrapper .gallery-grid-item:nth-child(2)::after {
+	background: no-repeat center/100% url(https://images.squarespace-cdn.com/content/v1/6321be0d5fc517764a1c9809/4e842202-5404-4bdf-a036-89b886797bee/thirds.png);
+}
+
+/* b_copper.png | b_tin.png | b_crema.png */
+#gridThumbs .grid-item .grid-image img {
+	background-image: url(https://images.squarespace-cdn.com/content/v1/6321be0d5fc517764a1c9809/1675723073882-DL6R7LNZ65EY9N4EU7HA/b_tin.png?format=2500w);
+}
+
+#page .gallery-grid-item img {
+	background-image: url(https://images.squarespace-cdn.com/content/v1/6321be0d5fc517764a1c9809/1675723073882-DL6R7LNZ65EY9N4EU7HA/b_tin.png?format=2500w);
+}
+
+/* #gridThumbs .grid-item .grid-image img {
+	background-image: url(https://images.squarespace-cdn.com/content/v1/6321be0d5fc517764a1c9809/1675722759923-99UB38AAFMRG0AH1FXHU/b_tin.png?format=2500w);
+}
+
+#page .gallery-grid-item img {
+	background-image: url(https://images.squarespace-cdn.com/content/v1/6321be0d5fc517764a1c9809/1675722759923-99UB38AAFMRG0AH1FXHU/b_tin.png?format=2500w);
+}
+*/
+/*
+#gridThumbs .grid-item .grid-image img {
+	background-image: url(https://images.squarespace-cdn.com/content/v1/6321be0d5fc517764a1c9809/aba22927-2737-4e56-9d6c-11831ce415a2/b_crema.png?format=2500w);
+}
+
+#page .gallery-grid-item img {
+	background-image: url(https://images.squarespace-cdn.com/content/v1/6321be0d5fc517764a1c9809/aba22927-2737-4e56-9d6c-11831ce415a2/b_crema.png?format=2500w);
+}*/
