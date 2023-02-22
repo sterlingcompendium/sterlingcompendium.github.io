@@ -15,6 +15,11 @@
 	background: no-repeat center/100% url(https://images.squarespace-cdn.com/content/v1/6321be0d5fc517764a1c9809/4e842202-5404-4bdf-a036-89b886797bee/thirds.png);
 }
 
+#gridThumbs .grid-item .grid-image img,
+#page .gallery-grid-item img {
+	background-size: cover;
+}
+
 /* b_copper.png | b_tin.png | b_crema.png */
 #gridThumbs .grid-item .grid-image img {
 	background-image: url(https://images.squarespace-cdn.com/content/v1/6321be0d5fc517764a1c9809/1675723073882-DL6R7LNZ65EY9N4EU7HA/b_tin.png?format=2500w);
