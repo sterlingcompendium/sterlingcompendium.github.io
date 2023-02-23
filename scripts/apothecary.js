@@ -5,21 +5,12 @@ window.addEventListener('load', (event) => {
   const slug = path.split("/");
   const gallery = document.querySelector("a[href='/range/gallery']");
 
-  if (!slug[0]) {
-    console.log(filter + slug[0])
-    slug.shift();
-  }
-
-  console.log(filter)
-  console.log(path)
-  console.log(!path)
-  console.log(filter)
+  if (!slug[0]) slug.shift();
 
   if (path.indexOf("/") !== -1) {
     path = slug[0];
   } else if (!path) {
     path = "range";
-    console.log(filter + path)
   }
 
   document.body.classList.add("path-" + path);
