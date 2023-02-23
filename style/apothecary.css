@@ -130,7 +130,6 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 	background-color: var(--siteBackgroundColor) !important;
 }
 
-/* Moved to squarespace CSS */
-/* .path-store .ProductItem-additional .col div:nth-last-child(-n + 5) {
+.path-store .ProductItem-additional .col div:nth-last-child(-n + 4) {
 	display: none;
-}*/
+}
