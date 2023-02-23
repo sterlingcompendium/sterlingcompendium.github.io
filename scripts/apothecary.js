@@ -2,6 +2,7 @@ window.addEventListener('load', (event) => {
   const filter = "PTHCRY| ";
   const pathname = window.location.pathname;
   let path = pathname.substr(1);
+  const paths = ["store", "trade"];
   const slug = path.split("/");
   const gallery = document.querySelector("a[href='/range/gallery']");
 
@@ -17,6 +18,12 @@ window.addEventListener('load', (event) => {
 
   if (slug[1]) {
     document.body.classList.add("slug-" + slug[1]);
+  }
+
+  if (paths.contains(path)) {
+    document.body.classList.add("header-light");
+  } else {
+    alert(path)
   }
 
   if (gallery) {
