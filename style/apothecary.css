@@ -48,3 +48,10 @@
 	background-image: url(https://sterlingcompendium.github.io/images/b_crema.png);
 }
 */
+
+@media screen and (max-width: 767px) {
+	.pagination-faux {
+		margin-right: -6vw;
+		margin-left: -6vw;
+	}
+}
