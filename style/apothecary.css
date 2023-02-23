@@ -130,10 +130,6 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 	background-color: var(--siteBackgroundColor) !important;
 }
 
-.path-store .ProductItem-additional .col div:nth-last-child(-n + 4) {
+.path-store .ProductItem-additional .col > div:nth-last-child(-n + 4) {
 	display: none;
-}
-
-.path-store .ProductItem-additional .col div.horizontalrule-block {
-	display: block !important;
 }
