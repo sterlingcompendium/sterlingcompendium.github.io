@@ -108,6 +108,6 @@
 
 .path-trade #siteWrapper .content-wrapper .sqs-block-content h2 {
 	background-color: hsla(var(--white-hsl), .5);
-	color: var(--white-hsl) !important;
+	color: white;
 	padding: 0 .5rem;
 }
