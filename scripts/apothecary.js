@@ -3,13 +3,20 @@ window.addEventListener('load', (event) => {
   const pathname = window.location.pathname;
   const path = pathname.substr(1);
   const slug = path.split("/");
+  const gallery = document.querySelector("a[href='/range/gallery']");
 
   slug.shift();
 
-  document.body.classList.add("path-" + path);
-  document.body.classList.add("slug-" + slug[0]);
+  if (path.indexOf("/")) {
+    path = slug;
+  }
 
-  const gallery = document.querySelector("a[href='/range/gallery']");
+  document.body.classList.add("path-" + path);
+
+  if (slug[0]) {
+    document.body.classList.add("slug-" + slug[0]);
+  }
+
   if (gallery) {
     gallery.href = "/gallery";
   }
