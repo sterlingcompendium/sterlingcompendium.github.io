@@ -98,9 +98,9 @@
 	color: var(--white-hsl) !important;
 }
 
-.path-store #siteWrapper .content-wrapper {
+/* .path-store #siteWrapper .content-wrapper {
 	background-color: hsla(var(--white-hsl), 1);
-}
+} */
 
 .path-store .header-light section:first-child .section-background {
 	background-color: rgb(224, 224, 224);
