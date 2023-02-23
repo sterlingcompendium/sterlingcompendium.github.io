@@ -6,7 +6,8 @@ window.addEventListener('load', (event) => {
 
   slug.shift();
 
-  document.body.classList.add("path-" + path + ", slug-" + slug[0]);
+  document.body.classList.add("path-" + path);
+  document.body.classList.add("slug-" + slug[0]);
 
   const gallery = document.querySelector("a[href='/range/gallery']");
   if (gallery) {
