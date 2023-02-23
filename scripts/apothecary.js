@@ -1,7 +1,7 @@
 window.addEventListener('load', (event) => {
   const filter = "PTHCRY| ";
   const pathname = window.location.pathname;
-  const path = pathname.substr(1);
+  let path = pathname.substr(1);
   const slug = path.split("/");
   const gallery = document.querySelector("a[href='/range/gallery']");
 
@@ -12,6 +12,8 @@ window.addEventListener('load', (event) => {
   }
 
   document.body.classList.add("path-" + path);
+
+  console.log(filter + slug[0])
 
   if (slug[0]) {
     document.body.classList.add("slug-" + slug[0]);
