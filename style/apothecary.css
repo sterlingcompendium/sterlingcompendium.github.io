@@ -108,6 +108,6 @@
 
 .path-trade #siteWrapper .content-wrapper h2 {
 	background-color: hsla(var(--white-hsl), .5);
-	color: hsla(var(--white-hsl), 1);
+	color: var(--white-hsl) !important;
 	padding: 0 .5rem;
 }
