@@ -55,3 +55,53 @@
 		margin-left: -6vw;
 	}
 }
+
+.header-light #siteWrapper #header[data-header-style="dynamic"].header {
+	background-color: var(--siteBackgroundColor) !important;
+}
+
+.header-light #siteWrapper #header[data-header-style="dynamic"].header {
+	background-color: transparent !important;
+}
+
+.header-light #siteWrapper .content-wrapper {
+	background-color: hsla(var(--white-hsl), 1);
+}
+
+.header-light .header .header-announcement-bar-wrapper {
+	background-color: hsla(var(--white-hsl), .5);
+}
+
+.header-light :not(.header--menu-open) .header-title-text a {
+	color: var(--white-hsl);
+}
+
+.header-light :not(.header--menu-open) .header-nav-wrapper a {
+	color: var(--white-hsl);
+}
+
+.header-light :not(.header--menu-open) .header-nav-wrapper .header-nav-item--active a {
+	color: var(--white-hsl);
+}
+
+.header-light :not(.header--menu-open) .header-actions {
+	color: var(--white-hsl);
+}
+
+.header-light :not(.header--menu-open) .burger-inner .top-bun,
+.header-light :not(.header--menu-open) .burger-inner .patty,
+.header-light :not(.header--menu-open) .burger-inner .bottom-bun {
+	background-color: hsla(var(--black-hsl), .5);
+}
+
+.header-light section:first-child .section-background {
+	background-color: rgb(224, 224, 224);
+}
+
+.header-light section:first-child .section-background-overlay {
+	opacity: 0 !important;
+}
+
+.header-light .ProductItem-details-excerpt p span {
+	color: var(--white-hsl) !important;
+}

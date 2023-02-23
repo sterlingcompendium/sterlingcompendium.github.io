@@ -22,8 +22,6 @@ window.addEventListener('load', (event) => {
 
   if (paths.contains(path)) {
     document.body.classList.add("header-light");
-  } else {
-    alert(path)
   }
 
   if (gallery) {
