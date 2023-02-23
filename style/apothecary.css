@@ -90,10 +90,6 @@
 	background-color: hsla(var(--black-hsl), .5);
 }
 
-.header-light section:first-child .section-background {
-	background-color: rgb(224, 224, 224);
-}
-
 .header-light section:first-child .section-background-overlay {
 	opacity: 0 !important;
 }
@@ -106,6 +102,10 @@
 	background-color: hsla(var(--white-hsl), 1);
 }
 
+.path-store .header-light section:first-child .section-background {
+	background-color: rgb(224, 224, 224);
+}
+
 .path-trade #siteWrapper .content-wrapper .sqs-block-content h2 {
 	background-color: hsla(var(--white-hsl), .5);
 	color: white;
@@ -113,6 +113,5 @@
 }
 
 .path-trade #siteWrapper footer .content div {
-	background-colors: var(--siteBackgroundColor) !important;
-	background-color: orange;
+	background-color: var(--siteBackgroundColor) !important;
 }
