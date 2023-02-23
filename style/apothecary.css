@@ -106,7 +106,7 @@
 	background-color: hsla(var(--white-hsl), 1);
 }
 
-.path-trade #siteWrapper .content-wrapper h2 {
+.path-trade #siteWrapper .content-wrapper .sqs-block-content h2 {
 	background-color: hsla(var(--white-hsl), .5);
 	color: var(--white-hsl) !important;
 	padding: 0 .5rem;
