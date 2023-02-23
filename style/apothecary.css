@@ -64,10 +64,6 @@
 	background-color: transparent !important;
 }
 
-.header-light #siteWrapper .content-wrapper {
-	background-color: hsla(var(--white-hsl), 1);
-}
-
 .header-light .header .header-announcement-bar-wrapper {
 	background-color: hsla(var(--white-hsl), .5);
 }
@@ -104,4 +100,13 @@
 
 .header-light .ProductItem-details-excerpt p span {
 	color: var(--white-hsl) !important;
+}
+
+.path-store #siteWrapper .content-wrapper {
+	background-color: hsla(var(--white-hsl), 1);
+}
+
+.path-trade #siteWrapper .content-wrapper h2 {
+	background-color: hsla(var(--white-hsl), .5);
+	color: var(--white-hsl);
 }
