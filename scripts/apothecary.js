@@ -12,6 +12,8 @@ window.addEventListener('load', (event) => {
 
   if (path.indexOf("/")) {
     path = slug[0];
+  } else if (!path) {
+    path = "range";
   }
 
   document.body.classList.add("path-" + path);
