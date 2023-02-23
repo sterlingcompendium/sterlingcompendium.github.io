@@ -1,9 +1,10 @@
 window.addEventListener('load', (event) => {
+  const filter = "PTHCRY| ";
   const path = window.location.pathname;
   const slug = path.split("/");
   slug.shift();
 
-  console.log(path)
+  console.log(filter + path);
 
   if (slug[0] === "range") {
     document.body.classList.add("slug-" + slug[1]);
