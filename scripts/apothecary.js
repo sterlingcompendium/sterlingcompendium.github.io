@@ -16,8 +16,8 @@ window.addEventListener('load', (event) => {
 
   document.body.classList.add("path-" + path);
 
-  if (slug[0]) {
-    document.body.classList.add("slug-" + slug[0]);
+  if (slug[1]) {
+    document.body.classList.add("slug-" + slug[1]);
   }
 
   if (gallery) {
