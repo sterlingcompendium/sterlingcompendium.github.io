@@ -7,7 +7,8 @@ window.addEventListener('load', (event) => {
 
   // console.log(filter + path);
   console.log({
-    filter: slug
+    filter: slug,
+    path: path
   });
 
   if (slug[0] === "range") {
