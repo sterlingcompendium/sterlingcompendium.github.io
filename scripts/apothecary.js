@@ -8,7 +8,7 @@ window.addEventListener('load', (event) => {
   slug.shift();
 
   if (path.indexOf("/")) {
-    path = slug;
+    path = slug[0];
   }
 
   document.body.classList.add("path-" + path);
