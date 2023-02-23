@@ -3,18 +3,13 @@ window.addEventListener('load', (event) => {
   const path = window.location.pathname;
   const slug = path.split("/");
 
-  // console.log(filter + path);
-  console.log({
-    filter: slug,
-    path: path
-  });
-
   slug.shift();
 
   /*
     if (slug[0] === "range" || slug[0] === "store") {
       document.body.classList.add("path-" + slug[0]);
-    }*/
+    }
+  */
 
   document.body.classList.add("path-" + slug[0]);
 
