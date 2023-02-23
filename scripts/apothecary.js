@@ -12,7 +12,8 @@ window.addEventListener('load', (event) => {
 
   if (path.indexOf("/")) {
     path = slug[0];
-  } else if (path == undefined) {
+  } else if (path === undefined) {
+    console.log(filter + path)
     path = "range";
   }
 
