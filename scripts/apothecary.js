@@ -1,3 +1,5 @@
+alert("C5N")
+
 window.addEventListener('load', (event) => {
   const filter = "PTHCRY| ";
   const pathname = window.location.pathname;
