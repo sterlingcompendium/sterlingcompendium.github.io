@@ -130,6 +130,7 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 	background-color: var(--siteBackgroundColor) !important;
 }
 
+/*
 .path-store .ProductItem-additional .sqs-layout > .row > .col > div:nth-last-child(-n + 4) {
 	display: none;
 }
@@ -138,3 +139,4 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 .path-store #pdp .featured {
 	padding-bottom: 0 !important;
 }
+*/
