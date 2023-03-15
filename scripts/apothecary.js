@@ -1,4 +1,6 @@
-alert("C5N")
+window.addEventListener('DOMContentLoaded', (event) => {
+  alert("buhGAWK")
+});
 
 window.addEventListener('load', (event) => {
   const filter = "PTHCRY| ";
