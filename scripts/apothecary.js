@@ -1,14 +1,9 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-  alert("buhGAWK")
-});
-
-window.addEventListener('load', (event) => {
   const filter = "PTHCRY| ";
   const pathname = window.location.pathname;
   let path = pathname.substr(1);
   const paths = ["store", "trade"];
   const slug = path.split("/");
-  const gallery = document.querySelector("a[href='/range/gallery']");
 
   if (!slug[0]) slug.shift();
 
@@ -27,6 +22,10 @@ window.addEventListener('load', (event) => {
   if (paths.contains(path)) {
     document.body.classList.add("header-light");
   }
+});
+
+window.addEventListener('load', (event) => {
+  const gallery = document.querySelector("a[href='/range/gallery']");
 
   if (gallery) {
     gallery.href = "/gallery";
