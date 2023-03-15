@@ -140,3 +140,8 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 	padding-bottom: 0 !important;
 }
 */
+
+.path-store .ProductItem-additional .sqs-layout > .row > .col > div.spacer-block:last-child {
+	/* display: none; */
+	background-color: darkorange
+}
