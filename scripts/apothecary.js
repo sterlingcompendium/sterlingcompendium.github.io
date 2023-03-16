@@ -22,11 +22,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   if (slug[2]) {
     const witnesses = slug[2].split("-");
-    const testamonial = [witnesses[0], witnesses[1]].join("-");
+    const testimonial = [witnesses[0], witnesses[1]].join("-");
 
-    console.log(filter + testamonial)
-
-    if (untested.contains(testamonial)) {
+    if (untested.contains(testimonial)) {
       document.body.classList.add("product-sans");
     }
   }
