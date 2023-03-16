@@ -63,6 +63,10 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 }
 */
 
+#pdp .ProductItem-gallery-thumbnails-item img {
+	background-image: url(https://sterlingcompendium.github.io/images/b_tin.png);
+}
+
 @media screen and (max-width: 767px) {
 	.pagination-faux {
 		margin-right: -6vw;
@@ -130,6 +134,7 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 	background-color: var(--siteBackgroundColor) !important;
 }
 
+/* Hides Testimonials */
 /*
 .path-store .ProductItem-additional .sqs-layout > .row > .col > div:nth-last-child(-n + 4) {
 	display: none;
