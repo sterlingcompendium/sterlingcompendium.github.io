@@ -168,3 +168,7 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 .path-store .ProductItem-additional .sqs-layout > .row > .col > div.spacer-block:last-child {
 	display: none;
 }
+
+.header-actions-action--social a {
+	display: none;
+}
