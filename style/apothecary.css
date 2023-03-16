@@ -63,6 +63,11 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 }
 */
 
+#pdp .ProductItem-gallery-thumbnails-item img,
+#pdp .ProductItem-gallery-slides-item img {
+	background-size: cover;
+}
+
 #pdp .ProductItem-gallery-thumbnails-item img {
 	background-image: url(https://sterlingcompendium.github.io/images/b_tin.png);
 }
