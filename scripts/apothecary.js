@@ -2,9 +2,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const filter = "PTHCRY| ";
   const pathname = window.location.pathname;
   let path = pathname.substr(1);
-  const paths = ["store", "trade"];
-  const untested = ["classic-shampoo", "classic-conditioner", "deep-cleanse", "brilliant-cream"];
   const slug = path.split("/");
+  const paths = ["store", "trade"];
+  const sans = ["classic-shampoo", "classic-conditioner", "deep-cleanse", "brilliant-cream"];
 
   if (!slug[0]) slug.shift();
 
@@ -21,10 +21,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
   }
 
   if (slug[2]) {
-    const witnesses = slug[2].split("-");
-    const testimonial = [witnesses[0], witnesses[1]].join("-");
+    const slugs = slug[2].split("-");
+    const slugged = [slugs[0], slugs[1]].join("-");
 
-    if (untested.contains(testimonial)) {
+    if (sans.contains(slugged)) {
       document.body.classList.add("product-sans");
     }
   }
