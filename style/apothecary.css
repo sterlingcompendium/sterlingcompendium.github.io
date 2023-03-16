@@ -155,6 +155,16 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 }
 */
 
+/* Hides _some_ Testimonials */
+.product-sans .ProductItem-additional .sqs-layout > .row > .col > div:nth-last-child(-n + 4) {
+	display: none;
+}
+
+.product-sans #pdp,
+.product-sans #pdp .featured {
+	padding-bottom: 0 !important;
+}
+
 .path-store .ProductItem-additional .sqs-layout > .row > .col > div.spacer-block:last-child {
 	display: none;
 }
