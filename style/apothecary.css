@@ -67,6 +67,10 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 	background-image: url(https://sterlingcompendium.github.io/images/b_tin.png);
 }
 
+#pdp .ProductItem-gallery-slides-item img {
+	background-image: url(https://sterlingcompendium.github.io/images/b_tin.png);
+}
+
 @media screen and (max-width: 767px) {
 	.pagination-faux {
 		margin-right: -6vw;
