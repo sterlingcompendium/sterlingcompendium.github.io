@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const pathname = window.location.pathname;
   let path = pathname.substr(1);
   const paths = ["store", "trade"];
+  const untested = ["classic-shampoo", "trade"];
   const slug = path.split("/");
 
   if (!slug[0]) slug.shift();
@@ -17,6 +18,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   if (slug[1]) {
     document.body.classList.add("slug-" + slug[1]);
+  }
+
+  if (slug[2]) {
+    document.body.classList.add("untested-" + slug[2]);
+    console.log(filter + slug[2])
   }
 
   if (paths.contains(path)) {
