@@ -69,8 +69,7 @@ function focusThumbnail() {
   // console.log(thumbnailed)
   // console.log(current)
 
-  console.log(index,
-    switch)
+  console.log(index, swap)
   console.log(focusing)
 
 }
