@@ -98,7 +98,8 @@ function onClassChange(element, callback) {
   observer.observe(element, {
     attributes: true
   });
-  return observer.disconnect;
+
+  // return observer.disconnect;
 }
 
 function focusThumbnail() {
@@ -110,13 +111,9 @@ function focusThumbnail() {
     thumbnailed.classList.remove("focused");
     console.log(filter + 'remove("focused")')
   } else {
-    console.log(filter + 'nada')
+    console.log(filter + 'c5n')
   }
-
-
-
 }
-
 
 window.addEventListener('load', (event) => {
   const gallery = document.querySelector("a[href='/range/gallery']");
