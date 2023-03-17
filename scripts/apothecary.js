@@ -81,17 +81,20 @@ function focusThumbnail() {
 
 const focusable = ".ProductItem-gallery-slides-item";
 document.querySelectorAll(focusable).forEach(element => {
-  onClassChange(element, focusThumbnail);
+  onClassChange(element, focusThumbnail, "selected");
 });
 
-function onClassChange(element, callback) {
+function onClassChange(element, callback, className) {
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
       if (
         mutation.type === 'attributes' &&
         mutation.attributeName === 'class'
       ) {
-        callback(mutation.target);
+
+        if (mutation.target.classList.contains(className)) {
+          callback(mutation.target);
+        }
       }
     });
   });
@@ -102,7 +105,7 @@ function onClassChange(element, callback) {
   // return observer.disconnect;
 }
 
-function focusThumbnail() {
+function focusThumbnail(target) {
   const focusable = ".ProductItem-gallery-thumbnails-item";
   const focused = focusable + " img.focused";
 
@@ -111,7 +114,9 @@ function focusThumbnail() {
     thumbnailed.classList.remove("focused");
     console.log(filter + 'remove("focused")')
   } else {
-    console.log(filter + 'j4a')
+    const first = focusable + ":first-child img";
+    document.querySelector(first).classList.add("focused");
+    console.log(filter + 'first')
   }
 }
 
