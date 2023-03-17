@@ -81,7 +81,7 @@ function focusThumbnail() {
 
 const focusable = ".ProductItem-gallery-thumbnails-item";
 document.querySelectorAll(focusable).forEach(element => {
-  onClassChange(element, focusThumbnail());
+  onClassChange(element, focusThumbnail);
 });
 
 function onClassChange(element, callback) {
