@@ -121,7 +121,7 @@ function focusThumbnail(target) {
 
   console.log(filter + selected)
 
-  if (!thumbnailed) {
+  if (!document.querySelector(focused)) {
     console.log(filter + "CHICKEN")
     document.querySelector(focusable + ":first-child img").classList.add("focused");
   } else {
