@@ -54,10 +54,15 @@ function focusThumbnail() {
     console.log("nothing was focused")
   }
 
-  console.log(filter + selected)
 
-  console.log(thumbnailed)
-  console.log(current)
+  const index = current.dataset.slideIndex;
+
+  // console.log(filter + selected)
+
+  // console.log(thumbnailed)
+  // console.log(current)
+
+  console.log(index)
 
   // pull index from current, find that thumbnail and add `focussed`
   // thumbnailed.classList.add("focused");
