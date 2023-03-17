@@ -56,35 +56,37 @@ function focusThumbnail() {
     console.log("nothing was focused")
   }
 
+  const indices = [0, 2, 1];
   const index = current.dataset.slideIndex;
-  const focus = focusable + ":nth-child(" + index + ") img";
+  const
+  switch = indices[index];
+  const focus = focusable + ":nth-child(" +
+    switch +") img";
   const focusing = document.querySelector(focus);
 
   focusing.classList.add("focused");
 
-  console.log(focus)
-  console.log(focusing)
-
-
+  // console.log(focus)
   // console.log(filter + selected)
-
   // console.log(thumbnailed)
   // console.log(current)
 
-  console.log(index)
+  console.log(index,
+    switch)
   console.log(focusing)
-
-  // pull index from current, find that thumbnail and add `focussed`
-  // thumbnailed.classList.add("focused");
 
 }
 
-
-
 window.addEventListener('load', (event) => {
   const gallery = document.querySelector("a[href='/range/gallery']");
+  const pathname = window.location.pathname;
+  const store = pathname.indexOf("store/p/") > -1;
 
   if (gallery) {
     gallery.href = "/gallery";
+  }
+
+  if (store) {
+    focusThumbnail();
   }
 });
