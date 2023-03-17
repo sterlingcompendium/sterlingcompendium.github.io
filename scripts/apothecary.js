@@ -34,6 +34,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
   }
 });
 
+const control = ".product-item-gallery-carousel-control";
+const thumbs = ".ProductItem-gallery-thumbnails-item img";
+document.querySelectorAll(control).forEach(element => element.addEventListener('click', function(event) {
+  focusThumbnail(event);
+}));
+
+function focusThumbnail(event) {
+  console.log(event.target)
+}
+
+
+
 window.addEventListener('load', (event) => {
   const gallery = document.querySelector("a[href='/range/gallery']");
 
