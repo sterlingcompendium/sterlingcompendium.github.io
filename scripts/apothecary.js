@@ -108,16 +108,16 @@ function onClassChange(element, callback, className) {
 function focusThumbnail(target) {
   const focusable = ".ProductItem-gallery-thumbnails-item";
   const focused = focusable + " img.focused";
-
   const thumbnailed = document.querySelector(focused);
+
   if (thumbnailed) {
     thumbnailed.classList.remove("focused");
-    console.log(filter + 'remove("focused")')
-  } else {
-    const first = focusable + ":first-child img";
-    document.querySelector(first).classList.add("focused");
-    console.log(filter + 'first')
   }
+
+  const selected = target.dataset.slideIndex;
+  const focusing = focusable + ":nth-child(" + selected + ") img";
+
+  document.querySelector(focusing).classList.add("focused");
 }
 
 window.addEventListener('load', (event) => {
