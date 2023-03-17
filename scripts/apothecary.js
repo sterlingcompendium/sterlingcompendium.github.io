@@ -105,7 +105,7 @@ function onClassChange(element, callback, className) {
     attributes: true
   });
 
-  // return observer.disconnect;
+  return observer.disconnect;
 }
 
 function focusThumbnail(target) {
