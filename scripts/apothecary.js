@@ -48,7 +48,8 @@ function focusThumbnail() {
 
   const current = document.querySelector(selected);
 
-  thumbnailed.classList.add("focused");
+  if thumbnailed thumbnailed.classList.remove("focused");
+  else console.log("nothing was focused")
 
   console.log(filter + selected)
 
@@ -56,7 +57,7 @@ function focusThumbnail() {
   console.log(current)
 
   // pull index from current, find that thumbnail and add `focussed`
-
+  // thumbnailed.classList.add("focused");
 
 }
 
