@@ -118,6 +118,13 @@ function focusThumbnail(target) {
   const focusing = focusable + ":nth-child(" + selected + ") img";
 
   document.querySelector(focusing).classList.add("focused");
+
+  if (!thumbnailed) {
+    console.log(filter + "CHICKEN")
+    document.querySelector(focusable + ":first-child img").classList.add("focused");
+  } else {
+    console.log(filter + "buhGAWK")
+  }
 }
 
 window.addEventListener('load', (event) => {
