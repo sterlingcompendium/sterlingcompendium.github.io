@@ -79,7 +79,7 @@ function focusThumbnail() {
 }
 */
 
-const focusable = ".ProductItem-gallery-thumbnails-item";
+const focusable = ".ProductItem-gallery-slides-item";
 document.querySelectorAll(focusable).forEach(element => {
   onClassChange(element, focusThumbnail);
 });
@@ -111,7 +111,7 @@ function focusThumbnail() {
     thumbnailed.classList.remove("focused");
     console.log(filter + 'remove("focused")')
   } else {
-    console.log(filter + 'c5n')
+    console.log(filter + 'j4a')
   }
 }
 
