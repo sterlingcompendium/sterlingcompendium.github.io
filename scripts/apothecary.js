@@ -51,14 +51,13 @@ function focusThumbnail() {
 
   if (thumbnailed) {
     thumbnailed.classList.remove("focused")
-    console.log("focused was removed")
   } else {
-    console.log("nothing was focused")
+    document.querySelector(":first-child img").classList.add("focused");
   }
 
   // const indices = [0, 1, 2];
   const index = current.dataset.slideIndex;
-  const swap = indices[index];
+  // const swap = indices[index];
   const focus = focusable + ":nth-child(" + index + ") img";
   const focusing = document.querySelector(focus);
 
