@@ -55,10 +55,11 @@ function focusThumbnail() {
     document.querySelector(":first-child img").classList.add("focused");
   }
 
-  // const indices = [0, 1, 2];
   const index = current.dataset.slideIndex;
+  // const indices = [0, 1, 2];
   // const swap = indices[index];
-  const focus = focusable + ":nth-child(" + index + ") img";
+  const slide = (index) ? index - 1 : 0;
+  const focus = focusable + ":nth-child(" + slide + ") img";
   const focusing = document.querySelector(focus);
 
   focusing.classList.add("focused");
