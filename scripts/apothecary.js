@@ -59,6 +59,9 @@ function focusThumbnail() {
   // const indices = [0, 1, 2];
   // const swap = indices[index];
   const slide = (index) ? index - 1 : 0;
+
+  console.log(filter + slide)
+
   const focus = focusable + ":nth-child(" + slide + ") img";
   const focusing = document.querySelector(focus);
 
