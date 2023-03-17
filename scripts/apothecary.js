@@ -56,7 +56,7 @@ function focusThumbnail() {
     console.log("nothing was focused")
   }
 
-  const indices = [0, 2, 1];
+  const indices = [0, 1, 2];
   const index = current.dataset.slideIndex;
   const swap = indices[index];
   const focus = focusable + ":nth-child(" + swap + ") img";
@@ -69,9 +69,8 @@ function focusThumbnail() {
   // console.log(thumbnailed)
   // console.log(current)
 
-  console.log(index, swap)
-  console.log(focusing)
-
+  // console.log(index, swap)
+  // console.log(focusing)
 }
 
 window.addEventListener('load', (event) => {
