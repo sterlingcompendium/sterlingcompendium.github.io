@@ -1,4 +1,7 @@
 const filter = "PTHCRY| ";
+const state = {
+  focused: null
+};
 
 window.addEventListener('DOMContentLoaded', (event) => {
   const pathname = window.location.pathname;
@@ -109,23 +112,21 @@ function focusThumbnail(target) {
   const focusable = ".ProductItem-gallery-thumbnails-item";
   const focused = focusable + " img.focused";
   const thumbnailed = document.querySelector(focused);
-
-  if (thumbnailed) {
-    thumbnailed.classList.remove("focused");
-  }
-
   const selected = target.dataset.slideIndex;
-  const focusing = focusable + ":nth-child(" + selected + ") img";
 
-  document.querySelector(focusing).classList.add("focused");
+  if (selected !== state.focused) {
+    if (thumbnailed) {
+      thumbnailed.classList.remove("focused");
+    }
 
-  console.log(filter + selected)
+    const focusing = focusable + ":nth-child(" + selected + ") img";
 
-  if (!document.querySelector(focused)) {
-    console.log(filter + "CHICKEN")
-    document.querySelector(focusable + ":first-child img").classList.add("focused");
+    document.querySelector(focusing).classList.add("focused");
+    state.focused = selected;
+
+    console.log(filter + selected)
   } else {
-    console.log(filter + "buhGAWK")
+    console.log(filter + "selected unchanged")
   }
 }
 
