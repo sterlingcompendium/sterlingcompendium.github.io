@@ -60,7 +60,11 @@ function focusThumbnail() {
   const focus = focusable + ":nth-child(" + index + ") img";
   const focusing = document.querySelector(focus);
 
-  focusing.classList.add("focused");
+  // focusing.classList.add("focused");
+
+  console.log(focus)
+  console.log(focusing)
+
 
   // console.log(filter + selected)
 
