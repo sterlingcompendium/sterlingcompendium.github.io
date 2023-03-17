@@ -48,8 +48,11 @@ function focusThumbnail() {
 
   const current = document.querySelector(selected);
 
-  if thumbnailed thumbnailed.classList.remove("focused");
-  else console.log("nothing was focused")
+  if (thumbnailed) {
+    thumbnailed.classList.remove("focused")
+  } else {
+    console.log("nothing was focused")
+  }
 
   console.log(filter + selected)
 
