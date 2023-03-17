@@ -1,4 +1,4 @@
-var filter = "PTHCRY| ";
+const filter = "PTHCRY| ";
 
 window.addEventListener('DOMContentLoaded', (event) => {
   const pathname = window.location.pathname;
@@ -36,21 +36,28 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 const control = ".product-item-gallery-carousel-control";
-const products = ".ProductItem-gallery-slides-item";
-const selected = ".ProductItem-gallery-slides-item.selected";
 
 document.querySelectorAll(control).forEach(element => element.addEventListener('click', function(event) {
   focusThumbnail();
 }));
 
 function focusThumbnail() {
-  // const current = ".ProductItem-gallery-thumbnails-item img.focused";
-  const current = ".ProductItem-gallery-thumbnails-item img:first-child";
-  const focused = document.querySelector(current);
+  const focused = ".ProductItem-gallery-thumbnails-item img.focused";
+  const selected = ".ProductItem-gallery-slides-item.selected";
+  const thumbnailed = document.querySelector(focused);
 
-  focused.classList.add("focused");
+  const current = document.querySelector(selected);
 
-  console.log(focused)
+  thumbnailed.classList.add("focused");
+
+  console.log(filter + selected)
+
+  console.log(thumbnailed)
+  console.log(current)
+
+  // pull index from current, find that thumbnail and add `focussed`
+
+
 }
 
 
