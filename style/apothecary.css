@@ -172,3 +172,7 @@ div.gallery-grid-wrapper .gallery-grid-item:last-child img {
 .header-actions-action--social a {
 	display: none;
 }
+
+.ProductItem-gallery-thumbnails-item img.focused {
+	opacity: .5;
+}
