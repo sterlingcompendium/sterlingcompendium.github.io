@@ -35,6 +35,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
   }
 });
 
+
+/*
 const control = ".product-item-gallery-carousel-control";
 
 document.querySelectorAll(control).forEach(element => element.addEventListener('click', function(event) {
@@ -75,6 +77,46 @@ function focusThumbnail() {
   console.log(index)
   // console.log(focusing)
 }
+*/
+
+const focusable = ".ProductItem-gallery-thumbnails-item";
+document.querySelectorAll(focusable).forEach(element => {
+  onClassChange(element, focusThumbnail());
+});
+
+function onClassChange(element, callback) {
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (
+        mutation.type === 'attributes' &&
+        mutation.attributeName === 'class'
+      ) {
+        callback(mutation.target);
+      }
+    });
+  });
+  observer.observe(element, {
+    attributes: true
+  });
+  return observer.disconnect;
+}
+
+function focusThumbnail() {
+  const focusable = ".ProductItem-gallery-thumbnails-item";
+  const focused = focusable + " img.focused";
+
+  const thumbnailed = document.querySelector(focused);
+  if (thumbnailed) {
+    thumbnailed.classList.remove("focused");
+    console.log(filter + 'remove("focused")')
+  } else {
+    console.log(filter + 'nada')
+  }
+
+
+
+}
+
 
 window.addEventListener('load', (event) => {
   const gallery = document.querySelector("a[href='/range/gallery']");
