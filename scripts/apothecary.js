@@ -56,11 +56,11 @@ function focusThumbnail() {
     console.log("nothing was focused")
   }
 
-  const index = current.dataset.slideIndex - 1;
+  const index = current.dataset.slideIndex;
   const focus = focusable + ":nth-child(" + index + ") img";
   const focusing = document.querySelector(focus);
 
-  // focusing.classList.add("focused");
+  focusing.classList.add("focused");
 
   console.log(focus)
   console.log(focusing)
