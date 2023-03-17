@@ -42,20 +42,25 @@ document.querySelectorAll(control).forEach(element => element.addEventListener('
 }));
 
 function focusThumbnail() {
-  const focused = ".ProductItem-gallery-thumbnails-item img.focused";
+  const focusable = ".ProductItem-gallery-thumbnails-item";
+  const focused = focusable + " img.focused";
   const selected = ".ProductItem-gallery-slides-item.selected";
+  const thumbnails = document.querySelectorAll(focusable);
   const thumbnailed = document.querySelector(focused);
-
   const current = document.querySelector(selected);
 
   if (thumbnailed) {
     thumbnailed.classList.remove("focused")
+    console.log("focused was removed")
   } else {
     console.log("nothing was focused")
   }
 
+  const index = current.dataset.slideIndex - 1;
+  const focus = focusable + ":nth-child(" + index + ") img";
+  const focusing = document.querySelector(focus);
 
-  const index = current.dataset.slideIndex;
+  focusing.classList.add("focused");
 
   // console.log(filter + selected)
 
@@ -63,6 +68,7 @@ function focusThumbnail() {
   // console.log(current)
 
   console.log(index)
+  console.log(focusing)
 
   // pull index from current, find that thumbnail and add `focussed`
   // thumbnailed.classList.add("focused");
