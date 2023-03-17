@@ -1,5 +1,6 @@
+var filter = "PTHCRY| ";
+
 window.addEventListener('DOMContentLoaded', (event) => {
-  const filter = "PTHCRY| ";
   const pathname = window.location.pathname;
   let path = pathname.substr(1);
   const slug = path.split("/");
@@ -35,13 +36,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 const control = ".product-item-gallery-carousel-control";
-const thumbs = ".ProductItem-gallery-thumbnails-item img";
+const products = ".ProductItem-gallery-slides-item";
+const selected = ".ProductItem-gallery-slides-item.selected";
+
 document.querySelectorAll(control).forEach(element => element.addEventListener('click', function(event) {
-  focusThumbnail(event);
+  focusThumbnail();
 }));
 
-function focusThumbnail(event) {
-  console.log(event.target)
+function focusThumbnail() {
+  // const current = ".ProductItem-gallery-thumbnails-item img.focused";
+  const current = ".ProductItem-gallery-thumbnails-item img:first-child";
+  const focused = document.querySelector(current);
+
+  focused.classList.add("focused");
+
+  console.log(focused)
 }
 
 
