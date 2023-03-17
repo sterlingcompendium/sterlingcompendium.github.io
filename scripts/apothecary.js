@@ -58,10 +58,8 @@ function focusThumbnail() {
 
   const indices = [0, 2, 1];
   const index = current.dataset.slideIndex;
-  const
-  switch = indices[index];
-  const focus = focusable + ":nth-child(" +
-    switch +") img";
+  const swap = indices[index];
+  const focus = focusable + ":nth-child(" + swap + ") img";
   const focusing = document.querySelector(focus);
 
   focusing.classList.add("focused");
