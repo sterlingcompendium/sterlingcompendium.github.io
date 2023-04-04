@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   let path = pathname.substr(1);
   const slug = path.split("/");
   const paths = ["store", "trade"];
-  const sans = ["classic-shampoo", "classic-conditioner", "deep-cleanse", "brilliant-cream"];
+  const sans = ["classic-shampoo", "classic-conditioner", "deep-cleanse"];
 
   if (!slug[0]) slug.shift();
 
